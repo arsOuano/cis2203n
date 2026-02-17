@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Study Buddy</string>
+    <string name="first_button">NEXT PAGE</string>
+    <string name="second_page_text">This is the Second Screen</string>
+    <string name="previous_page1">Back to First Page</string>
+    <string name="second_button">NEXT PAGE</string>
+    <string name="third_page_text">This is the Third Screen</string>
+    <string name="previous_page2">Back to Second Page</string>
+</resources>
