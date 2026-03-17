@@ -10,17 +10,16 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/screenView"
         android:layout_width="261dp"
         android:layout_height="54dp"
-        android:layout_marginTop="172dp"
+        android:layout_marginTop="168dp"
         android:background="@color/wisteriaBlue"
         android:clickable="false"
         android:contextClickable="false"
         android:padding="5dp"
         android:shadowColor="#8E7575"
-        android:text="23100490"
-        android:textAlignment="textEnd"
+        android:textAlignment="textStart"
         android:textColor="#1C1C1C"
         android:textStyle="bold"
         app:autoSizeTextType="uniform"
@@ -36,7 +35,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/screenView"
         app:rowCount="5">
 
         <Button
