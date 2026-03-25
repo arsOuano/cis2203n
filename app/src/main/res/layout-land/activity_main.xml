@@ -9,185 +9,216 @@
     android:backgroundTint="@color/softCyan"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/btnReq"
+        android:layout_width="178dp"
+        android:layout_height="36dp"
+        android:text="*4.90"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/screenView"
+        app:layout_rowWeight="0" />
+
     <TextView
         android:id="@+id/screenView"
         android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginEnd="20dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="32dp"
         android:background="@color/wisteriaBlue"
         android:clickable="false"
-        android:padding="10dp"
+        android:padding="8dp"
         android:shadowColor="#8E7575"
         android:textAlignment="textEnd"
         android:textColor="#1C1C1C"
         android:textStyle="bold"
         app:autoSizeTextType="uniform"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btnReq"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="*4.90"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/screenView" />
-
     <androidx.gridlayout.widget.GridLayout
         android:id="@+id/gridID"
-        android:layout_width="413dp"
-        android:layout_height="281dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="658dp"
+        android:layout_height="245dp"
+        android:layout_margin="8dp"
         app:columnCount="4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnReq"
+        app:layout_constraintTop_toBottomOf="@+id/screenView"
         app:rowCount="5">
 
         <Button
             android:id="@+id/btn7"
             android:layout_width="0dp"
+            android:layout_height="0dp"
             android:backgroundTint="@color/skySurge"
             android:text="7"
             app:layout_column="0"
             app:layout_columnWeight="1"
-            app:layout_row="0" />
+            app:layout_row="0"
+            app:layout_rowWeight="1" />
 
         <Button
             android:id="@+id/btn8"
             android:layout_width="0dp"
+            android:layout_height="0dp"
             android:backgroundTint="@color/skySurge"
             android:text="8"
             app:layout_column="1"
             app:layout_columnWeight="1"
-            app:layout_row="0" />
+            app:layout_row="0"
+            app:layout_rowWeight="1" />
 
         <Button
             android:id="@+id/btn9"
             android:layout_width="0dp"
+            android:layout_height="0dp"
             android:backgroundTint="@color/skySurge"
             android:text="9"
             app:layout_column="2"
             app:layout_columnWeight="1"
-            app:layout_row="0" />
+            app:layout_row="0"
+            app:layout_rowWeight="1" />
 
         <Button
             android:id="@+id/btnc"
             android:layout_width="0dp"
+            android:layout_height="0dp"
             android:text="C"
             app:layout_column="3"
             app:layout_columnWeight="1"
-            app:layout_row="0" />
+            app:layout_row="0"
+            app:layout_rowWeight="1" />
 
         <Button
             android:id="@+id/btn4"
             android:layout_width="0dp"
+            android:layout_height="0dp"
             android:backgroundTint="@color/skySurge"
             android:text="4"
             app:layout_column="0"
             app:layout_columnWeight="1"
-            app:layout_row="1" />
+            app:layout_row="1"
+            app:layout_rowWeight="1" />
 
         <Button
             android:id="@+id/btn5"
             android:layout_width="0dp"
+            android:layout_height="0dp"
             android:backgroundTint="@color/skySurge"
             android:text="5"
             app:layout_column="1"
             app:layout_columnWeight="1"
-            app:layout_row="1" />
+            app:layout_row="1"
+            app:layout_rowWeight="1" />
 
         <Button
             android:id="@+id/btn6"
             android:layout_width="0dp"
+            android:layout_height="0dp"
             android:backgroundTint="@color/skySurge"
             android:text="6"
             app:layout_column="2"
             app:layout_columnWeight="1"
-            app:layout_row="1" />
+            app:layout_row="1"
+            app:layout_rowWeight="1" />
 
         <Button
             android:id="@+id/btnAdd"
             android:layout_width="0dp"
+            android:layout_height="0dp"
             android:text="+"
             app:layout_column="3"
             app:layout_columnWeight="1"
-            app:layout_row="1" />
+            app:layout_row="1"
+            app:layout_rowWeight="1" />
 
         <Button
             android:id="@+id/btn1"
             android:layout_width="0dp"
+            android:layout_height="0dp"
             android:backgroundTint="@color/skySurge"
             android:text="1"
             app:layout_column="0"
             app:layout_columnWeight="1"
-            app:layout_row="2" />
+            app:layout_row="2"
+            app:layout_rowWeight="1" />
 
         <Button
             android:id="@+id/btn2"
             android:layout_width="0dp"
+            android:layout_height="0dp"
             android:backgroundTint="@color/skySurge"
             android:text="2"
             app:layout_column="1"
             app:layout_columnWeight="1"
-            app:layout_row="2" />
+            app:layout_row="2"
+            app:layout_rowWeight="1" />
 
         <Button
             android:id="@+id/btn3"
             android:layout_width="0dp"
+            android:layout_height="0dp"
             android:backgroundTint="@color/skySurge"
             android:text="3"
             app:layout_column="2"
             app:layout_columnWeight="1"
-            app:layout_row="2" />
+            app:layout_row="2"
+            app:layout_rowWeight="1" />
 
         <Button
             android:id="@+id/btnSub"
             android:layout_width="0dp"
+            android:layout_height="0dp"
             android:text="-"
             app:layout_column="3"
             app:layout_columnWeight="1"
-            app:layout_row="2" />
+            app:layout_row="2"
+            app:layout_rowWeight="1" />
 
         <Button
             android:id="@+id/btn0"
             android:layout_width="0dp"
+            android:layout_height="0dp"
             android:backgroundTint="@color/skySurge"
             android:text="0"
             app:layout_column="0"
             app:layout_columnWeight="1"
-            app:layout_row="3" />
+            app:layout_row="3"
+            app:layout_rowWeight="1" />
 
         <Button
             android:id="@+id/btnMul"
             android:layout_width="0dp"
+            android:layout_height="0dp"
             android:text="*"
             app:layout_column="1"
             app:layout_columnWeight="1"
-            app:layout_row="3" />
+            app:layout_row="3"
+            app:layout_rowWeight="1" />
 
         <Button
             android:id="@+id/btnDiv"
             android:layout_width="0dp"
+            android:layout_height="0dp"
             android:text="/"
             app:layout_column="2"
             app:layout_columnWeight="1"
-            app:layout_row="3" />
+            app:layout_row="3"
+            app:layout_rowWeight="1" />
 
         <Button
             android:id="@+id/btnEq"
             android:layout_width="0dp"
+            android:layout_height="0dp"
             android:text="="
             app:layout_column="3"
             app:layout_columnWeight="1"
-            app:layout_row="3" />
-
+            app:layout_row="3"
+            app:layout_rowWeight="1" />
 
     </androidx.gridlayout.widget.GridLayout>
 

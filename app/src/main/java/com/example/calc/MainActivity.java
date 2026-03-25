@@ -92,6 +92,36 @@ public class MainActivity extends AppCompatActivity {
                 screen.setText("");
             }
         });
+
+        View btnReq = findViewById(R.id.btnReq);
+        if (btnReq != null) {
+            btnReq.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    String currentText = screen.getText().toString();
+                    if (!currentText.isEmpty()) {
+                        try {
+                            double val = Double.parseDouble(currentText);
+                            double result = val * 4.90;
+
+                            String resStr = String.valueOf(result);
+                            // Clean up .0 if it's an integer
+                            if (resStr.endsWith(".0")) resStr = resStr.substring(0, resStr.length() - 2);
+                            
+                            screen.setText(resStr);
+                            
+                            // Treat this as a completed calculation result
+                            num1 = resStr;
+                            num2 = "";
+                            operator = "";
+                            isOperatorPressed = false;
+                        } catch (Exception e) {
+                            screen.setText("Error");
+                        }
+                    }
+                }
+            });
+        }
     }
 
     @Override
