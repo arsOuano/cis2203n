@@ -6,6 +6,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -31,7 +32,16 @@ public class MainActivity extends AppCompatActivity {
         });
 
         screen = findViewById(R.id.screenView);
-        screen.setText("");
+
+        if (savedInstanceState != null) {
+            num1 = savedInstanceState.getString("num1", "");
+            num2 = savedInstanceState.getString("num2", "");
+            operator = savedInstanceState.getString("operator", "");
+            isOperatorPressed = savedInstanceState.getBoolean("isOperatorPressed", false);
+            screen.setText(savedInstanceState.getString("screenText", ""));
+        } else {
+            screen.setText("");
+        }
 
         int[] digitIds = {R.id.btn0, R.id.btn1, R.id.btn2, R.id.btn3, R.id.btn4, R.id.btn5, R.id.btn6, R.id.btn7, R.id.btn8, R.id.btn9};
         View.OnClickListener digitListener = new View.OnClickListener() {
@@ -82,6 +92,16 @@ public class MainActivity extends AppCompatActivity {
                 screen.setText("");
             }
         });
+    }
+
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putString("num1", num1);
+        outState.putString("num2", num2);
+        outState.putString("operator", operator);
+        outState.putBoolean("isOperatorPressed", isOperatorPressed);
+        outState.putString("screenText", screen.getText().toString());
     }
 
     private void calculate() {
