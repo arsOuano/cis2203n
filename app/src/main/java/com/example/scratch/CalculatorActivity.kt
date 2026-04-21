@@ -12,4 +12,8 @@ class CalculatorActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_calculator)
     }
+
+    fun addNumbers(a: Double, b: Double): Double {
+        return a + b
+    }
 }
